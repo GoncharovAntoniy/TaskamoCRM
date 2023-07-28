@@ -1,0 +1,85 @@
+.App {
+    max-width: 1440px;
+    background-color: #0E1014;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.container {
+    padding: 46px 150px 20px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 950px) {
+    .container {
+        padding: 46px 50px 20px;
+    }
+}
+
+
+.red_round {
+    width: 311px;
+    height: 311px;
+    background-color: #961A1A;
+    position: absolute;
+    top: 251px;
+    left: -102px;
+    filter: blur(392px);
+    border-radius: 50%;
+}
+
+.violet_round {
+    width: 259px;
+    height: 259px;
+    background-color: #833AB4;
+    position: absolute;
+    top: -154px;
+    right: 579px;
+    filter: blur(392px);
+    border-radius: 50%;
+    
+}
+
+
+.purple_ball {
+    position: absolute;
+    top: -2px;
+    right: 512px;
+}
+
+.red_ball {
+    position: absolute;
+    top: 83px;
+    left: 519px;
+}
+
+.red_ball_mini {
+    position: absolute;
+    top: 547px;
+    right: 561px;
+}
+
+
+
+@media screen and (max-width: 750px) {
+    .container {
+        padding: 20px 20px 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .red_round,
+    .violet_round,
+    .purple_ball,
+    .red_ball,
+    .red_ball_mini {
+        display: none;
+    }
+
+    .container {
+        padding: 20px 0;
+    }
+}

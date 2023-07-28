@@ -1,0 +1,174 @@
+.body {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 90px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 20px;
+
+    @media screen and (max-width: 700px) {
+        flex-direction: column;
+        gap: 45px;
+        background-image: url(../image/body_background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 30px;
+        padding-bottom: 55px;
+    }
+
+    &_left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+
+        @media screen and (max-width: 700px) {
+            flex: 0 1 100%;
+        }
+
+        &_title {
+            font-size: 48px;
+            color: #e4e5ea;
+            max-width: 362px;
+            margin: 0;
+            font-family: Inter;
+            font-weight: 300;
+
+            @media screen and (max-width: 700px) {
+                align-items: center;
+                max-width: 100%;
+            }
+
+
+            @media screen and (max-width: 380px) {
+                font-size: 36px;
+            }
+
+            &_child {
+                background: linear-gradient(to right, #fcb045, #ff3f78);
+                background-clip: text;
+                color: transparent;
+                font-weight: 900;
+                font-family: Inter;
+                margin: 0;
+
+            }
+        }
+
+        &_subtitle {
+            font-family: Montserrat;
+            font-size: 18px;
+            color: #e4e5ea;
+            max-width: 275px;
+            margin: 0;
+
+            @media screen and (max-width: 700px) {
+                text-align: left;
+                max-width: 100%;
+            }
+        }
+    }
+
+    &_right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 35px;
+        box-sizing: border-box;
+
+        @media screen and (max-width: 700px) {
+            flex: 0 1 100%;
+            align-items: flex-start;
+        }
+
+        &_title {
+            font-size: 18px;
+            font-family: Inter;
+            color: #e4e5ea;
+            text-align: right;
+
+
+            @media screen and (max-width: 700px) {
+                text-align: left;
+            }
+
+            &_child {
+                background: linear-gradient(to right, #fcb045, #fd1d1d);
+                background-clip: text;
+                color: transparent;
+            }
+        }
+
+        &_item {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+
+            @media screen and (max-width: 700px) {
+                justify-content: flex-start;
+            }
+
+            @media screen and (max-width: 380px) {
+                gap: 10px;
+            }
+            
+
+            &_child {
+                width: 135px;
+                text-align: right;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                @media screen and (max-width: 700px) {
+                    text-align: left;
+                }
+
+                &_title {
+                    font-size: 18px;
+                    font-family: Inter;
+                    color: #e4e5ea;
+                    font-weight: 500;
+                }
+
+                &_subtitle {
+                    font-size: 16px;
+                    font-family: Montserrat;
+                    color: #E4E5EA;
+                }
+            }
+        }
+
+        &_button {
+            padding: 21px 35px;
+            color: #E4E5EA;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: Inter;
+            background-color: #4077F3;
+            border: none;
+            margin-top: 30px;
+
+
+            @media screen and (max-width: 480px) {
+                display: none;
+            }
+        }
+    }
+}
+
+
+.line_body {
+    width: 10px;
+    background: linear-gradient(to right rgba(252, 176, 69, 1), rgba(253, 29, 29, 1));
+}
+
+.body_right_item_child_resize {
+    display: flex;
+    gap: 5px;
+    font-size: 13px;
+    font-family: Montserrat;
+    color: #E4E5EA;
+    text-transform: uppercase;
+}
